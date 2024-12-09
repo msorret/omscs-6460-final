@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+# LiveQ
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+LiveQ is a real-time feedback Chrome extension designed to enhance classroom interactions by allowing teachers to create questions and receive live feedback from students. The application supports multiple question types, real-time visualizations, and a gamified student experience.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Real-time feedback for classroom engagement.
+- Support for multiple-choice, short-answer, and yes/no questions.
+- Instant visualization of student responses.
+- Easy-to-use interface for both teachers and students.
+- Gamification to encourage participation.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Node.js**: Ensure you have Node.js installed on your system. You can download it from the [Node.js Official Website](https://nodejs.org).
+- **npm**: npm (Node Package Manager) comes with Node.js. You'll use it to install dependencies.
 
-### `npm run build`
+### Steps
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the Repository**:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   git clone https://github.com/your-username/liveq.git
+   cd liveq
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Install Dependencies**:
+Run the following command in the project directory to install the required dependencies:
 
-### `npm run eject`
+   ```bash
+    npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **Run the Application Locally**:
+To run the application in development mode:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ```bash
+      npm start
+    
+Open your browser and navigate to http://localhost:3000.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Building and Launching as a Chrome Extension
 
-## Learn More
+### Steps to Build
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. **Build the Project**:
+Create a production build of the application:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    ```bash
+    npm run build
 
-### Code Splitting
+This command generates a build directory containing the optimized static files.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. **Prepare the Build for Chrome**:
+Open the build folder.
+Ensure that the manifest.json file is configured correctly for Chrome extensions. A sample manifest might look like this:
 
-### Analyzing the Bundle Size
+    ```bash
+    {
+    "manifest_version": 3,
+    "name": "LiveQ",
+    "version": "1.0",
+    "description": "Real-time classroom feedback tool.",
+    "action": {
+      "default_popup": "index.html"
+    },
+    "permissions": ["storage"],
+    "host_permissions": ["*://*/*"]
+    }
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Steps to Launch
 
-### Making a Progressive Web App
+1. **Load the Extension**:
+- Open Chrome and navigate to chrome://extensions/.
+- Enable Developer Mode in the top-right corner.
+- Click Load Unpacked.
+- Select the build directory generated in the previous step.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+2. **Launch the Extension**:
+The extension will now appear in your Chrome toolbar.
+Click on it to open the LiveQ application.
 
-### Advanced Configuration
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
