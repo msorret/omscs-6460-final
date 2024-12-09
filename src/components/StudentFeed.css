@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rammetto+One&display=swap');
+
+/* Container styles */
+.my-feed-container {
+    width: 387px;
+    height: 394px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 154px;
+    left: 36px;
+    overflow: hidden;
+  }
+  
+  /* Header styles */
+  .my-feed-header {
+    padding: 10px 16px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+  .my-feed-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #000;
+    margin: 0;
+    padding-top: 5px;
+  }
+  
+  /* Table styles */
+  .my-feed-content {
+    height: 350px;
+    overflow-y: auto;
+  }
+  
+  /* Class List Styling */
+  .class-list {
+    max-height: calc(100% - 50px); /* Leaves space for the header */
+    overflow-y: auto;
+  }
+  
+  .class-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  .class-item:last-child {
+    border-bottom: none;
+  }
+  
+  /* Period Bubble */
+  .period-bubble {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    margin-right: 10px;
+    
+  }
+  
+  /* Class Name and Students Count */
+  .class-name {
+    flex: 1;
+    font-size: 12px;
+    font-weight: normal;
+    color: black;
+  }
+  
+  .students-count {
+    font-size: 14px;
+    color: #4494ed;
+    margin-right: 10px;
+  }
+  
+    /* Remove Button */
+.status-button {
+  background-color: #EBEF3F;
+        width: 56px;
+        font-size: 12px;
+        font-weight: 600;
+        color: black;
+        border: none;
+        padding: 5px 5px;
+        border-radius: 4px;
+        cursor: pointer;
+        border-radius: 40px;
+        text-align: center;
+}
+      
+  
+  .status-done {
+    background-color: #EBEF3F;
+    color: black;
+  }
+  
+  .status-open {
+    background-color: #EBEF3F;
+    color: black;
+  }
+  
+  .status-closed {
+    background-color: #E00B0B;
+    color: white;
+  }
+  

@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rammetto+One&display=swap');
+
+/* Container Styling */
+.students-container {
+    position: absolute;
+    width: 387px;
+    height: 215px;
+    top: 351px;
+    left: 33px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  /* Header Styling */
+  .students-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+  }
+  
+  .students-header h2 {
+    font-size: 18px;
+    font-weight: 600; /* Corresponds to 'semibold' */
+    color: black;
+    margin: 0;
+  }
+  
+  .add-student {
+    font-size: 13px;
+    font-weight: 500;
+    color: white;
+    background-color: #4494ed; /* Blue button */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    border-radius: 40px;
+    border-color: black;
+    border-style: solid;
+    border-width: 0.5px;
+  }
+  
+  /* Students List Styling */
+  .students-list {
+    max-height: calc(100% - 50px); /* Leaves space for the header */
+    overflow-y: auto;
+  }
+  
+  .student-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  .student-item:last-child {
+    border-bottom: none;
+  }
+  
+  /* Student Name */
+  .student-name {
+    flex: 1;
+    font-size: 14px;
+    font-weight: 400; /* Corresponds to 'regular' */
+    color: black;
+  }
+  
+  /* Student Score */
+  .student-score {
+    font-size: 13px;
+    font-weight: 500; /* Corresponds to 'medium' */
+    color: #4494ed;
+    margin-right: 10px;
+  }
+  
+  /* Remove Button */
+  .remove-button {
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    background-color: #e53935; /* Red button */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    border-radius: 40px;
+  }
+  
+  .remove-button:hover {
+    background-color: #d32f2f;
+  }
+  /* Dropdown Styling */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    margin: 0;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .dropdown-arrow {
+    margin-left: 5px;
+    font-size: 12px;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    display: none;
+    z-index: 10;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-item {
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+    cursor: pointer;
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  .dropdown-item:last-child {
+    border-bottom: none;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f0f1f7;
+  }
+  

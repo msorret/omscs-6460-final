@@ -1,0 +1,16 @@
+/* Set the popup window size */
+html,
+body {
+  width: 800px; /* Match the desired popup width */
+  height: 600px; /* Match the desired popup height */
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent scrollbars */
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; /* Adjust content flow */
+}

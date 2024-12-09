@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "LiveQ Dashboard",
+  "version": "1.0",
+  "description": "A React-based Chrome extension for managing classes and quizzes.",
+  "permissions": [],
+  "host_permissions": [],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "favicon.ico",
+      "48": "favicon.ico",
+      "128": "favicon.ico"
+    }
+  }
+}

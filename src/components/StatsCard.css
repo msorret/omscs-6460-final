@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rammetto+One&display=swap');
+/* Container */
+.stats-card {
+    width: 270px;
+    height: 117px;
+    position: absolute;
+    top: 208px;
+    left: 436px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    gap: 16px;
+    font-family: "Montserrat", sans-serif;
+    padding-left: 50px;
+    
+  }
+  
+  /* Left: Circular Progress */
+  .stats-progress {
+    position: relative;
+    width: 70px;
+    height: 70px;
+  }
+  
+  .progress-ring {
+    transform: rotate(-90deg);
+  }
+  
+  .progress-ring-circle-bg {
+    fill: none;
+    stroke: #EBEF3F;
+  }
+  
+  .progress-ring-circle {
+    fill: none;
+    stroke: #4285f4; /* Blue */
+    stroke-linecap: round;
+    transition: stroke-dashoffset 0.35s;
+  }
+  
+  .progress-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    font-weight: 600;
+    color: #4285f4;
+  }
+  
+  /* Right: Stats Text */
+  .stats-details {
+    flex: 1;
+  }
+  
+  .stats-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    margin: 0;
+    font-size: 20px;
+    color: black;
+  }
+  
+  .stats-lifetime,
+  .stats-rate {
+    margin: 4px 0;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  
+  .highlight-orange {
+    color: #f9a825; /* Orange */
+    font-weight: 600;
+  }
+  
+  .highlight-purple {
+    color: #9c27b0; /* Purple */
+    font-weight: 600;
+  }
+  
+  /* Button */
+  .cash-out-button {
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #4285f4;
+    background-color: #e3f2fd;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 5px;
+  }
+  
+  .cash-out-button:hover {
+    background-color: #bbdefb;
+  }
+  

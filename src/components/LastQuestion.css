@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rammetto+One&display=swap');
+/* Container Styling */
+.last-question-container {
+    position: absolute;
+    width: 300px;
+    height: 314px;
+    top: 221px;
+    left: 436px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px;
+  }
+  
+  /* Header Styling */
+  .last-question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .last-question-header h2 {
+    font-size: 18px;
+    font-weight: 600; /* Semibold */
+    color: black;
+    margin: 0;
+  }
+  
+  .tags {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .tag {
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 40px;
+    border-color: black;
+    border-style: solid;
+    border-width: 0.5px;
+  }
+  
+  .tag.purple {
+    background-color: #9c27b0; /* Purple for "Biology 1" */
+  }
+  
+  .tag.yellow {
+    background-color: #ffeb3b; /* Yellow for "Multiple Choice" */
+    color: black;
+  }
+  
+  /* Question Text */
+  .question-text {
+    margin-top: 15px;
+  }
+  
+  .question-text p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  .subtext {
+    font-size: 12px;
+    color: #6b6b6b; /* Light gray for subtext */
+  }
+  
+  /* Chart Container */
+.chart-container {
+    margin-top: 15px;
+    width: 100%; /* Full width of the parent */
+    height: 200px; /* Fixed height for the chart */
+  }
+  
+  

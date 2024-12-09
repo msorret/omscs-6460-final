@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rammetto+One&display=swap');
+
+/* Container for the buttons */
+.action-buttons {
+    position: absolute;
+    top: 154px;
+    left: 432px;
+    display: flex;
+    gap: 10px; /* Spacing between buttons */
+  }
+  
+  /* Blue Button Styling */
+  .blue-button {
+    width: 184px;
+    height: 45px;
+    background-color: #4494ed; /* Blue color */
+    color: white;
+    font-size: 20px;
+    font-weight: 600; /* Corresponds to 'semibold' */
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blue-button:hover {
+    background-color: #387fc9; /* Slightly darker blue on hover */
+  }
+  
+  /* White Button Styling */
+  .white-button {
+    width: 142px;
+    height: 45px;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    font-weight: 600; /* Corresponds to 'semibold' */
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid black;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .white-button:hover {
+    background-color: #f0f1f7; /* Light gray on hover */
+  }
+  
+  /* Icon Styling for Buttons */
+  .button-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+  }
+  

@@ -1,0 +1,64 @@
+/* General Styling */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rammetto+One&display=swap');
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F0F1F7;
+  }
+  
+  /* Header Styling */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-container img {
+    width: 67px;
+    height: 64px;
+  }
+  
+  .logo-container h1 {
+    font-size: 32px;
+    font-weight: 600; /* Corresponds to 'semibold' */
+    margin-left: 15px;
+    color: black;
+  }
+  
+  .header-buttons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .header-buttons button {
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .header-buttons button:hover {
+    transform: scale(1.1);
+  }
+  
+  .header-buttons button img {
+    width: 24px;
+    height: 24px; /* Adjust icon size as needed */
+  }
+  

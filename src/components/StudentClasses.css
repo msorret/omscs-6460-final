@@ -1,0 +1,113 @@
+/* Container Styling */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rammetto+One&display=swap');
+.student-classes-container {
+    position: absolute;
+    width: 333px;
+    height: 183px;
+    top: 365px;
+    left: 436px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  /* Header Styling */
+  .classes-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+  }
+  
+  .classes-header h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+  }
+  
+  .edit-classes {
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+    background-color: #fffb82; /* Yellow background for "Edit Classes" */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    border-radius: 40px;
+    border-color: black;
+    border-style: solid;
+    border-width: 0.5px;
+  }
+  
+  /* Class List Styling */
+  .class-list {
+    max-height: calc(100% - 50px); /* Leaves space for the header */
+    overflow-y: auto;
+  }
+  
+  .class-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  .class-item:last-child {
+    border-bottom: none;
+  }
+  
+  /* Period Bubble */
+  .period-bubble {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    margin-right: 10px;
+  }
+  
+  /* Class Name and Students Count */
+  .class-name {
+    flex: 1;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .students-count {
+    font-size: 14px;
+    color: #4494ed;
+    margin-right: 10px;
+  }
+  
+  /* Add Button */
+  .add-button {
+    width: 24px;
+    height: 24px;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    color: #4494ed;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-button:hover {
+    background-color: #e8f4ff;
+  }
+  
